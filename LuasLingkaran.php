@@ -1,12 +1,13 @@
 <?php
 
-class LuasLingkaran {
+namespace App\Math;
 
+class LuasLingkaran {
     public const phi = 3.14;
-    public int $jari;
-    
-    public function __construct($isiJari = 1) {
-        $this->jari = $isiJari;
+    protected int $jari;
+
+    public function __construct($isijari = 1) {
+        $this->jari = $isijari;
     }
 
     public function tampil($nama = 'ban') {
@@ -15,15 +16,24 @@ class LuasLingkaran {
     }
 
     public static function testing() {
-        echo "ini dari static";
+        echo " ini dari static";
     }
 
     public function __destruct() {
-        echo "udah ah cape";
+        echo " udah ah cape";
     }
 }
 
-$lingkaran = new LuasLingkaran(5);
-$lingkaran->tampil('roda');
 
-LuasLingkaran::testing();
+
+
+
+
+
+
+
+
+
+
+
+
